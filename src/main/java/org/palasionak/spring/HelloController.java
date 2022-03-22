@@ -9,6 +9,5 @@ public class HelloController {
     @GetMapping("/hello-world")//когда польз-ль в строке бр-ра набирать /hello-world, запрос будет приходить в метод этого кнтроллера
     public String sayHello() {
         return "hello_world";
-
     }
 }
