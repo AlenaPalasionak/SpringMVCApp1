@@ -13,7 +13,7 @@ import org.thymeleaf.spring5.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring5.view.ThymeleafViewResolver;
 
 @Configuration
-@ComponentScan("org.palasionak.spring")
+@ComponentScan("org.palasionak.spring")//сканирует компоненты и в папках и в подпапках. отсканирует папку controllers
 @EnableWebMvc
 public class SpringConfig implements WebMvcConfigurer {
 
