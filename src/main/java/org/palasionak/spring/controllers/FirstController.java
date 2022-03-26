@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class FirstController {
 
     @GetMapping("/hello")//хотим принимать на вход get-запросы
-    public String helloPage() {
+    public String helloPage(@ReqestParam("name") String name, @RequestParam("SurName") String surname) {
         return "first/hello";// вьюшки(представления) будут лежать в папке first во views
 
     }
@@ -19,3 +19,4 @@ public class FirstController {
 
     }
 }
+//public String helloPage(@ReqestParam("name") String name, @RequestParam("SurName") String surname) {
