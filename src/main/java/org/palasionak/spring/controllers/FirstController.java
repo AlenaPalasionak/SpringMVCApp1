@@ -55,7 +55,9 @@ public class FirstController {
                 break;
         }
         model.addAttribute("result", result);// по ключу result поместим значение в переменную result. В html файле
-        // обратимся по этому ключу к значеию <p th:text="${result}"/>
+        // обратимся по этому ключу к значеию <p th:text="${result}"/>. Получается контроллер передаёт значение по ключу
+        // отображению(view) через модель
+
         return "first/calculator";
     }
 }
